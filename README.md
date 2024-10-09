@@ -1,9 +1,9 @@
 # book_library
 feature :
 **Register and Login**
-Email     : validation email (@gmail.com, @hotmail.com, etc)
-Password  : password harus terdiri dari 8 Karakter Alphanumeric dan harus mengandung setidaknya 1 huruf kapital, tidak boleh mengandung special karakter
-tidak dapat register dengan email yang sama.
+- Email     : validation email (@gmail.com, @hotmail.com, etc)
+- Password  : password harus terdiri dari 8 Karakter Alphanumeric dan harus mengandung setidaknya 1 huruf kapital, tidak boleh mengandung special karakter
+- tidak dapat register dengan email yang sama.
 
 **Management**
 1. Terdapat fungsi yang berguna untuk mencatat peminjaman buku
