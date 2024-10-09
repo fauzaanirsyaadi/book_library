@@ -10,18 +10,45 @@ feature :
 2. Admin Perpustakaan dapat mengetahui bahwa buku telat dikembalikan atau masih dalam peminjaman
 3. Setiap user hanya bisa meminjam 1 buku dan apabila sedang meminjam buku harus dikembalikan terlebih dahulu agar dapat meminjam Kembali
 
-Catatan :
-- Bahasa pemrograman diutamakan menggunakan sesuai Bahasa yang dibutuhkan pada requirement jobs vacancy.
-1. Python with fastAPI
-2. RDBMS is a must -> MySQL Query (SQL Alchemy)
-3. Python GRPC Technology (plus)
-4. Experienced on Kafka (plus)
-5. Familiar with NodeJS, ExpressJS is a strong point
-6. Familiar with DevOps tools, Jenkins, Fastlane, Codepush
-7. Familiar with Cloud and can do or explores services such as AWS, GCP, Alicloud, Azure
-8. Good concept of Git and can implement it such as, Pull request, merge request etc – Good concept of API and can make the best use of tools such as Postman to create well written API Documentation
-9. Know how to do Unit Test – Familiar with project management tools such as Jira, Trello, Mondays and Slack – Good attitude, time management and responsibility – Willing to learn and try new technologies 
-- Tampilan antarmuka yang bagus menjadi nilai plus.
-- Dokumentasi project untuk bagaimana running aplikasi ketika di clone menjadi nilai plus.
+
+project ini menggunakan :
+- FastAPI
+- SQLAlchemy
+- Alembic
+- Bcrypt
+- Email-validator
+- Pytest
+- Httpx 
+
 
 **HOW TO RUN**
+virtual env :
+   python -m venv venv
+   venv\Scripts\activate
+
+requirement :
+   pip install fastapi uvicorn
+   pip install email-validator
+   pip install sqlalchemy
+   pip install alembic
+   pip install bcrypt
+   pip install pytest httpx
+
+run server:
+   uvicorn main:app --reload
+
+run test :
+   pytest test_main.py
+
+**SQL**
+INSERT INTO books (title, author, description, user_id) VALUES
+('Judul Buku 1', 'Penulis 1', 'Deskripsi Buku 1', 1),
+('Judul Buku 2', 'Penulis 2', 'Deskripsi Buku 2', 1),
+('Judul Buku 3', 'Penulis 3', 'Deskripsi Buku 3', 2);
+
+**API Documentation**
+http://127.0.0.1:8000/docs
+
+
+
+
